@@ -1,0 +1,9 @@
+demo:
+  build: .
+  links:
+   - redis:redis
+  ports:
+   - "5000:8888"
+
+redis:
+  image: redis:latest
